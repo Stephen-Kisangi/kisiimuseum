@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Kisii Wildlife & Cultural Museum</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/contact.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-paw me-2"></i>
+                Mwanyagetinge Heritage Museum
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#exhibits">Exhibits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#culture">Culture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#visit">Visit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="contact-hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1 class="hero-title" data-aos="fade-up" data-aos-duration="1000">
+                            Get In Touch
+                        </h1>
+                        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                            We're here to help you plan your visit and answer any questions about our exhibits and cultural programs
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Quick Contact Options -->
+    <section id="quick-contact" class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="quick-contact-card whatsapp-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h4>WhatsApp</h4>
+                        <p>Quick responses for urgent inquiries</p>
+                        <a href="https://wa.me/254727433333" class="btn btn-success" target="_blank">
+                            <i class="fab fa-whatsapp me-2"></i>
+                            Chat with Us
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="quick-contact-card phone-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4>Call Us</h4>
+                        <p>Speak directly with our team</p>
+                        <a href="tel:+254727433333" class="btn btn-primary">
+                            <i class="fas fa-phone me-2"></i>
+                            +254 727 433 333
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="quick-contact-card email-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Email</h4>
+                        <p>Detailed inquiries and information</p>
+                        <a href="mailto:sirgeorge333@gmail.com" class="btn btn-secondary">
+                            <i class="fas fa-envelope me-2"></i>
+                            Send Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Contact Section -->
+    <section id="main-contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="contact-form-section">
+                        <h2 class="section-title">Send Us a Message</h2>
+                        <p class="section-subtitle">
+                            Fill out the form below and we'll get back to you as soon as possible.
+                        </p>
+                        
+                        <form id="contactForm" class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
+                                        <label for="firstName">First Name *</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required>
+                                        <label for="lastName">Last Name *</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                                        <label for="email">Email Address *</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone">
+                                        <label for="phone">Phone Number</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <div class="form-floating">
+                                    <select class="form-select" id="subject" name="subject" required>
+                                        <option value="">Choose a subject</option>
+                                        <option value="general">General Inquiry</option>
+                                        <option value="visit">Visit Planning</option>
+                                        <option value="education">Educational Programs</option>
+                                        <option value="events">Events & Bookings</option>
+                                        <option value="feedback">Feedback</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <label for="subject">Subject *</label>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="message" name="message" placeholder="Your message" style="height: 120px" required></textarea>
+                                    <label for="message">Your Message *</label>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter">
+                                <label class="form-check-label" for="newsletter">
+                                    Subscribe to our newsletter for updates on exhibits and events
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fas fa-paper-plane me-2"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="contact-info-section">
+                        <h2 class="section-title">Visit Our Museum</h2>
+                        <p class="section-subtitle">
+                            Plan your visit to experience the wonders of wildlife and Kisii culture.
+                        </p>
+                        
+                        <div class="contact-info-cards">
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h5>Address</h5>
+                                    <p>4099 Mwanyagetinge<br>Kisii, Kenya<br>40200</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h5>Opening Hours</h5>
+                                    <p>
+                                        <strong>Mon-Fri:</strong> 9:00 AM - 5:00 PM<br>
+                                        <strong>Sat-Sun:</strong> 8:00 AM - 6:00 PM<br>
+                                        <strong>Holidays:</strong> 10:00 AM - 4:00 PM
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-card">
+                                <div class="info-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h5>Contact Information</h5>
+                                    <p>
+                                        <strong>Phone:</strong> +254 727 433 333<br>
+                                        <strong>Email:</strong> sirgeorge333@gmail.com<br>
+                                        <strong>WhatsApp:</strong> +254 727 433 333
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Book Appointment Section -->
+                        <div class="appointment-section">
+                            <h4>Book an Appointment</h4>
+                            <p>Schedule a guided tour or special visit with our experts.</p>
+                            <button class="btn btn-outline-primary btn-lg" id="bookAppointmentBtn">
+                                <i class="fas fa-calendar-plus me-2"></i>
+                                Book Appointment
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map-section" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <h2 class="section-title" data-aos="fade-up">Find Us</h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                        Located in the heart of Kisii, easily accessible by public transport
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+                    <div class="map-container">
+                        <div class="map-placeholder">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <h4>Interactive Map</h4>
+                            <p>Click to open in Google Maps</p>
+                            <a href="https://maps.google.com/?q=Kisii,Kenya" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt me-2"></i>
+                                Open in Google Maps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq-section" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">Frequently Asked Questions</h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                        Quick answers to common questions about visiting our museum
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion" data-aos="fade-up" data-aos-delay="200">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    What are your admission prices?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Adults: $15, Students/Seniors: $12, Children (under 12): $8, Family Pass: $40. 
+                                    Group discounts are available for 10 or more visitors.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Do you offer guided tours?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes! We offer guided tours daily at 10 AM, 1 PM, and 3 PM. Private tours can be arranged 
+                                    by appointment. Our expert guides will take you through both wildlife exhibits and Kisii cultural displays.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Is the museum accessible for wheelchairs?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, our museum is fully wheelchair accessible with ramps, elevators, and accessible restrooms. 
+                                    We also provide wheelchairs for visitors who need them.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Can I take photos inside the museum?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Photography is allowed in most areas for personal use. Flash photography is prohibited 
+                                    near sensitive exhibits. Commercial photography requires prior permission.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5>
+                        <i class="fas fa-paw me-2"></i>
+                        Mwanyagetinge Heritage Museum
+                    </h5>
+                    <p>Dedicated to preserving wildlife and celebrating the rich cultural heritage of the Kisii people.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/254727433333" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#exhibits">Exhibits</a></li>
+                        <li><a href="index.html#culture">Culture</a></li>
+                        <li><a href="index.html#visit">Visit</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h6>Contact Info</h6>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i>123 Museum Drive, Kisii</li>
+                        <li><i class="fas fa-phone me-2"></i>+254 727 433 333</li>
+                        <li><i class="fas fa-envelope me-2"></i>Sirgeorge333@gmail.com</li>
+                        <li><i class="fab fa-whatsapp me-2"></i>WhatsApp: +254 727 433 333</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h6>Newsletter</h6>
+                    <p>Stay updated with our latest exhibits and events.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Your email">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Mwanyagetinge Heritage Museum. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light me-3">Privacy Policy</a>
+                    <a href="#" class="text-light">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Appointment Modal -->
+    <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="appointmentModalLabel">
+                        <i class="fas fa-calendar-plus me-2"></i>
+                        Book an Appointment
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="appointmentForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="apptFirstName" name="firstName" placeholder="First Name" required>
+                                    <label for="apptFirstName">First Name *</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="apptLastName" name="lastName" placeholder="Last Name" required>
+                                    <label for="apptLastName">Last Name *</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="apptEmail" name="email" placeholder="Email" required>
+                                    <label for="apptEmail">Email Address *</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="form-floating">
+                                    <input type="tel" class="form-control" id="apptPhone" name="phone" placeholder="Phone" required>
+                                    <label for="apptPhone">Phone Number *</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="form-floating">
+                                    <input type="date" class="form-control" id="apptDate" name="date" required>
+                                    <label for="apptDate">Preferred Date *</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="form-floating">
+                                    <select class="form-select" id="apptTime" name="time" required>
+                                        <option value="">Choose time</option>
+                                        <option value="09:00">9:00 AM</option>
+                                        <option value="10:00">10:00 AM</option>
+                                        <option value="11:00">11:00 AM</option>
+                                        <option value="13:00">1:00 PM</option>
+                                        <option value="14:00">2:00 PM</option>
+                                        <option value="15:00">3:00 PM</option>
+                                        <option value="16:00">4:00 PM</option>
+                                    </select>
+                                    <label for="apptTime">Preferred Time *</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <select class="form-select" id="apptType" name="type" required>
+                                    <option value="">Choose appointment type</option>
+                                    <option value="guided-tour">Guided Tour</option>
+                                    <option value="private-tour">Private Tour</option>
+                                    <option value="educational-program">Educational Program</option>
+                                    <option value="group-visit">Group Visit</option>
+                                    <option value="special-event">Special Event</option>
+                                    <option value="consultation">Consultation</option>
+                                </select>
+                                <label for="apptType">Appointment Type *</label>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <input type="number" class="form-control" id="apptGuests" name="guests" placeholder="Number of guests" min="1" max="50" required>
+                                <label for="apptGuests">Number of Guests *</label>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <textarea class="form-control" id="apptNotes" name="notes" placeholder="Special requests or notes" style="height: 100px"></textarea>
+                                <label for="apptNotes">Special Requests or Notes</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" form="appointmentForm" class="btn btn-primary">
+                        <i class="fas fa-calendar-check me-2"></i>
+                        Book Appointment
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="JS/contact.js"></script>
+</body>
+</html>
+

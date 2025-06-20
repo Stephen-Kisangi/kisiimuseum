@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-section {
     height: 100vh;
     background: linear-gradient(rgba(44, 85, 48, 0.6), rgba(139, 69, 19, 0.4)), 
-                url('./images/hero_background.jpg') center/cover no-repeat;
+                url('../images/hero_background.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     position: relative;
